@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="location-info">
+                <span class="material-icons">place</span> 
+                <div class="cityname">
+                    <h2 id="city-name">City Name</h2>
+                    <p id="date">Today</p>
+                </div>
+                <div class="sun-timings">
+                    <div class="sunrise">
+                        <span class="material-icons">wb_sunny</span> 
+                        <span id="sunrise-time">07:00</span>
+                    </div>
+                    <div class="sunset">
+                        <span class="material-icons">nights_stay</span> 
+                        <span id="sunset-time">19:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="temperature">
+                <h1 id="temperature">27°</h1>
+                <p id="weather-status">Sunny</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h2>Welcome back, Rohit Surya!</h2>
+                <p>Check out today’s weather information</p>
+            </header>
+
+            <div class="upcoming-hours">
+                <h3>Upcoming hours</h3>
+                <div class="hourly-forecast">
+                    <div class="hour">
+                        <span>Now</span>
+                        <span class="material-icons">wb_sunny</span> 
+                        <span>27°</span>
+                        <div class="precipitation">23%</div>
+                    </div>
+                    <div class="hour">
+                        <span>11:00</span>
+                        <span class="material-icons">wb_sunny</span> 
+                        <span>28°</span>
+                        <div class="precipitation">29%</div>
+                    </div>
+                    <div class="hour">
+                        <span>13:00</span>
+                        <span class="material-icons">cloud</span> 
+                        <span>29°</span>
+                        <div class="precipitation">75%</div>
+                    </div>
+                    <div class="hour">
+                        <span>15:00</span>
+                        <span class="material-icons">wb_sunny</span> 
+                        <span>30°</span>
+                        <div class="precipitation">33%</div>
+                    </div>
+                    <div class="hour">
+                        <span>17:00</span>
+                        <span class="material-icons">cloud</span> 
+                        <span>28°</span>
+                        <div class="precipitation">49%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Details Section -->
+            <div class="weather-details">
+                <div class="detail-item" id="humidity-card">
+                    <span class="material-icons">water_drop</span> 
+                    <p>Humidity</p>
+                    <h3 id="humidity-value">82%</h3>
+                    <p id="humidity-status">Bad</p>
+                    <div class="humidity-levels">
+                        <div class="level-bar" id="humidity-bar"></div>
+                    </div>
+                </div>
+                <div class="detail-item" id="wind-card">
+                    <span class="material-icons">air</span> 
+                    <p>Wind</p>
+                    <h3 id="wind-speed">8 km/h</h3>
+                    <p id="wind-status">Normal</p>
+                    <div class="level-bar" id="wind-bar"></div>
+                </div>
+                <div class="detail-item" id="uv-card">
+                    <span class="material-icons">waving_hand</span> 
+                    <p>UV Index</p>
+                    <h3 id="uv-index">4</h3>
+                    <p id="uv-status">Medium</p>
+                    <div class="level-bar" id="uv-bar"></div>
+                </div>
+                <div class="detail-item" id="precip-card">
+                    <span class="material-icons">cloud</span> 
+                    <p>Precipitation</p>
+                    <h3 id="precipitation">1.4 cm</h3>
+                    <p id="precip-status">Low</p>
+                    <div class="level-bar" id="precip-bar"></div>
+                </div>
+                <div class="detail-item" id="feels-like-card">
+                    <span class="material-icons">thermostat</span> 
+                    <p>Feels Like</p>
+                    <h3 id="feels-like">30°</h3>
+                    <p id="feels-like-status">Hot</p>
+                    <div class="level-bar" id="feels-like-bar"></div>
+                </div>
+                <div class="detail-item" id="rain-chance-card">
+                    <span class="material-icons">grain</span> 
+                    <p>Chance of Rain</p>
+                    <h3 id="rain-chance">42%</h3>
+                    <p id="rain-chance-status">Medium</p>
+                    <div class="level-bar" id="rain-chance-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
